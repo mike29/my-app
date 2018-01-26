@@ -1,0 +1,51 @@
+@import "_config.scss";
+.portfolioTitle {
+  color: red;
+}
+
+.row {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+
+}
+.aboutMeImage {
+width: auto !important; /*override the width below*/
+ width: 100%;
+ max-width: 800px;
+ float: left;
+ clear: both;
+ overflow: hidden;
+}
+
+.aboutPageSideOne {
+  background-color: $blacky;
+  //width: 50%;
+  border: none;
+  //background-image: url(http://ask.hiof.no/~michaems/bigpic.jpg);
+  //background-position: 800% 20%;
+  opacity: 0.2;
+}
+
+.aboutPageSideTwo {
+  background-color: $blacky;
+  float: left;
+  border: none;
+  color: $white;
+  text-align: justify;
+  height: 522px;
+}
+
+.aboutPageSideTwo h1 {
+  font-size: 5em;
+  padding: 5%;
+  padding-bottom: 10px;
+}
+.aboutPageSideTwo p {
+  padding: 6% 4%;
+  padding-top: 10px;
+}
+.aboutPageContainer {
+  margin: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,78 @@
+//variables
+
+$blac: #010000;
+$white: #fff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+$yellow_kind: #AE9E39;
+$blacky: #2C2C2A;
+$lightLink: #897C70;
+
+//fonts
+
+//mixin
+
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+    transform: translateY($e);
+  }
+
+  @mixin transition($e) {
+    -webkit-transition:$e;
+    -moz-transition:$e;
+      transition: $e;
+  }
+
+//
+//body style start
+body{
+  background-color: $white;
+  font-family: 'Open sans', sans-serif;
+  font-size: 34;
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+  overflow:hidden;
+  //background-image: url(http://ask.hiof.no/~michaems/bigpic.jpg);
+  //background-image: url(https://unsplash.com/search/photos/white?photo=2CRqlJyc89I);
+//background-image: url(https://ak3.picdn.net/shutterstock/videos/10910207/thumb/1.jpg);
+//background-repeat: no-repeat;
+
+}
+/*
+.constainer-fluid{
+  font-family: Lato, sans-serif;
+}
+
+.backgroundImageFixer {
+
+
+}
+
+*/
+a {
+    text-decoration: none;
+    @include transition(.4s ease-in-out);
+    cursor: pointer;
+
+    &:hover {
+    color:$red;
+    @include transition(.4s ease-in-out);
+    }
+}
+
+.constainer-fluid {
+    line-height: 24px;
+}
+//style image on portfolio page
+@mixin grayscale_element($value) {
+    -webkit-filter: #{"grayscale(#{$value})"};
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter:#{"grayscale(#{$value})"};
+}
+
+.page-container {
+  margin-left: 80px;
+}
